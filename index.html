@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mltools by lawrennd</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mltools</h1>
+        <p>Machine learning tools in MATLAB</p>
+
+        <p class="view"><a href="https://github.com/lawrennd/mltools">View the Project on GitHub <small>lawrennd/mltools</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lawrennd/mltools/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lawrennd/mltools/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lawrennd/mltools">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="matlab-mltools-toolbox" class="anchor" href="#matlab-mltools-toolbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matlab MLTOOLS Toolbox</h1>
+
+<p>The main objective of this toolbox is to integrate several machine learning methods with in a consistent framework which is coded in a compatible way with the methods available in the other toolboxes on this site. Whilst the other toolboxes typically reflect research projects, this toolbox reflects other researchers work or known algorithms. The code either provides 'wrappers' for other researchers code or independent implementations. Examples of code that is wrapped include Isomap, MVU and NETLAB.</p>
+
+<p>Background details for submitted software.</p>
+
+<p>We made use of software available from the University of Manchester. To operate our software you must also download the following toolboxes from that site.</p>
+
+<p>|-----------------------------------------------------------------------------|-------------|
+| <strong>Toolbox</strong>                                                                 | <strong>Version</strong> |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/datasets/downloadFiles/vrs0p1371">DATASETS</a> | 0.1371      |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/optimi/downloadFiles/vrs0p132">OPTIMI</a>      | 0.132       |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/ndlutil/downloadFiles/vrs0p163">NDLUTIL</a>    | 0.163       |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/netlab/downloadFiles/vrs3p3">NETLAB</a>        | 3.3         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/mvu/downloadFiles/vrs1p3">MVU</a>              | 1.3         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/lmvu/downloadFiles/vrs1p3">LMVU</a>            | 1.3         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/lle/downloadFiles/vrs1p0">LLE</a>              | 1.0         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/jdqr/downloadFiles/vrs1p0">JDQR</a>            | 1.0         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/isomap/downloadFiles/vrs1p0">ISOMAP</a>        | 1.0         |
+| <a href="http://www.cs.man.ac.uk/%7Eneill/sedumi/downloadFiles/vrs1p21">SEDUMI</a>       | 1.21        |</p>
+
+<p>Fix to re-enable HGPLVM visualization.</p>
+
+<h4>
+<a id="version-0138" class="anchor" href="#version-0138" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.138</h4>
+
+<p>Minor tweak of model write result and model load result to allow specification of the data loading function.</p>
+
+<h4>
+<a id="version-0137" class="anchor" href="#version-0137" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.137</h4>
+
+<p>Release for release of VARGPLVM with dynamics.</p>
+
+<h4>
+<a id="version-0136" class="anchor" href="#version-0136" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.136</h4>
+
+<p>Minor mods.</p>
+
+<h4>
+<a id="version-0135" class="anchor" href="#version-0135" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.135</h4>
+
+<p>Minor mods.</p>
+
+<h4>
+<a id="version-0134" class="anchor" href="#version-0134" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.134</h4>
+
+<p>Added pmvu model.</p>
+
+<h4>
+<a id="version-0133" class="anchor" href="#version-0133" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.133</h4>
+
+<p>Added functionality for writing model files using modelDeconstruct commands to keep written files smaller.</p>
+
+<h4>
+<a id="version-0132" class="anchor" href="#version-0132" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.132</h4>
+
+<p>Add click visualise functionality for LVM visualization, Laplacian eigenmaps and wrapper for MVU.</p>
+
+<h4>
+<a id="version-01311" class="anchor" href="#version-01311" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.1311</h4>
+
+<p>Minor change to lvmScatterPlot to fix bug caused when minimum values were positive.</p>
+
+<h4>
+<a id="version-0131" class="anchor" href="#version-0131" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.131</h4>
+
+<p>Minor changes to toolbox to fix reading in of C++ code.</p>
+
+<h4>
+<a id="version-013" class="anchor" href="#version-013" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.13</h4>
+
+<p>Added paramNameRegularExpressionLookup.m to regular expression match a parameter name in a model and return the associated indices. paramNameReverseLookup.m does the same thing but for the specific parameter name. Also added multimodel type, which allows for multi-task style learning of existing models. Added linear mapping type of model.</p>
+
+<h4>
+<a id="version-01291" class="anchor" href="#version-01291" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.1291</h4>
+
+<p>Changes to modelOutputGrad.m, modelOut.m, kbrOutputGrad.m, kbrExpandParam.m, modelOptimise.m to allow compatibility with SGPLVM and NCCA toolboxes. Added a preliminary coding of LLE.</p>
+
+<p>Note that to run the LLE code you will need to download the file "eigs_r11.m"</p>
+
+<h4>
+<a id="version-0129" class="anchor" href="#version-0129" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.129</h4>
+
+<p>Several changes for ICML dimensionality reduction tutorial, including adding density networks and GTM code as well as various latent variable visualisation code such as lvmTwoDPlot and lvmVisualise.</p>
+
+<p>Added dnet type model for GTM and density networks. Added various lvm helper files for doing nearest neighbour and plotting results for latent variable models. Added lmvu and mvu embedding wrapper. Added ppca model type. Added output gradients for model out functions (for magnification factor computation in dnet models). Added helpers for reading various models from FID mapmodel, matrix etc.). Added rbfOutputGradX and visualisation for spring dampers type.</p>
+
+<h4>
+<a id="version-0128" class="anchor" href="#version-0128" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.128</h4>
+
+<p>Fixed Viterbi alignment algorithm, thanks to Raquel Urtasun for pointing out the problems with it.</p>
+
+<p>Carl Henrik Ek added embeddings with maximum variance unfolding (landmark and normal) to the toolbox. Also several files modified by Carl Henrik to allow a single output dimension of a model to be manipulated.</p>
+
+<h4>
+<a id="version-0127" class="anchor" href="#version-0127" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.127</h4>
+
+<p>Minor modifications including adding file modelAddDynamics to replace fgplvmAddDynamics.</p>
+
+<h4>
+<a id="version-0126" class="anchor" href="#version-0126" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.126</h4>
+
+<p>Modified kbrParamInit to scale alpha weights and biases by number of data. Added 'dynamicsSliderChange' to lvmClassVisualise to allow visulisation of models with 'gpTime' style-dynamics.</p>
+
+<h4>
+<a id="version-0125" class="anchor" href="#version-0125" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.125</h4>
+
+<p>Added multimodel for learning multiple indepedent models with shared parameters.</p>
+
+<h4>
+<a id="version-0124" class="anchor" href="#version-0124" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.124</h4>
+
+<p>Added periodic RBF network and model gradient checker.</p>
+
+<h4>
+<a id="version-0123" class="anchor" href="#version-0123" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.123</h4>
+
+<p>Minor release in line with IVM toolbox 0.4.</p>
+
+<h4>
+<a id="version-0122" class="anchor" href="#version-0122" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.122</h4>
+
+<p>Added Hessian code for base model type and for MLP. Added Viterbi alignment code, viterbiAlign.</p>
+
+<h4>
+<a id="version-0121" class="anchor" href="#version-0121" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.121</h4>
+
+<p>Various minor bug fixes and changes which seem to have gone undocumented.</p>
+
+<h4>
+<a id="version-012" class="anchor" href="#version-012" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.12</h4>
+
+<p>Extended model type to be a generic container module for optimising any model. Added model test for testing a created model. The code is still in a bit of flux though with some design decisions not made and some code untested.</p>
+
+<h4>
+<a id="version-0111" class="anchor" href="#version-0111" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.111</h4>
+
+<p>Fixed bug in kbr where bias parameter fields where still being referred to as b.Also acknowledged the fact that the isomap graph may not be fully connected in isomapEmbed, but don't yet deal with it properly. Finally added lleEmbed.m for wrapping the lle code.</p>
+
+<h4>
+<a id="version-011" class="anchor" href="#version-011" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.11</h4>
+
+<p>Updated release for operation with FGPLVM toolbox 0.13. Structure of model creation changed and functions of the form modelOptions.m included for setting default options of the various machine learning models.</p>
+
+<h4>
+<a id="version-01" class="anchor" href="#version-01" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.1</h4>
+
+<p>The first release of the toolbox with various wrappers for NETLAB functions. Also latent variable model visualisation code was moved into this toolbox.</p>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<h3>
+<a id="lle" class="anchor" href="#lle" aria-hidden="true"><span class="octicon octicon-link"></span></a>LLE</h3>
+
+<h4>
+<a id="the-swiss-roll" class="anchor" href="#the-swiss-roll" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Swiss Roll</h4>
+
+<p>The `swiss roll data' is often used to illustrate dimensionality reduction algorithms despite the fact that it is very unrepresentative of real data sets.</p>
+
+<p>In the first examples we use 1000 data points to represent the swiss roll, <code>demSwissRollLle1.m</code> and <code>demSwissRollLle2.m</code>.</p>
+
+<p><img src="demSwissRollLle1.png" alt=""><img src="demSwissRollLle2.png" alt="">
+ <em>Left</em>: LLE on the swiss roll data using 4 neighbours. <em>Right</em>: LLE on the swiss roll data using 8 neighbours.
+In the next examples we use 3000 data points to represent the swiss roll, <code>demSwissRollFullLle1.m</code> and <code>demSwissRollFullLle2.m</code>.</p>
+
+<p><img src="demSwissRollFullLle1.png" alt=""><img src="demSwissRollFullLle2.png" alt="">
+ <em>Left</em>: LLE on the full swiss roll data using 4 neighbours. <em>Right</em>: LLE on the full swiss roll data using 8 neighbours.</p>
+
+<h4>
+<a id="oil-data" class="anchor" href="#oil-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Oil Data</h4>
+
+<p>The `oil data' is commonly used as a bench mark for visualisation algorithms. For more details on the data see <a href="http://www.ncrg.aston.ac.uk/GTM/3PhaseData.html">this page</a>.</p>
+
+<p>In these examples we used the 1000 data points from the training data for the oil, <code>demOilLle1.m</code> and <code>demOilLle2.m</code>.</p>
+
+<p><img src="demOilLle1.png" alt=""><img src="demOilLle2.png" alt="">
+ <em>Left</em>: LLE on the oil data using 4 neighbours, 9 errors when using classification by nearest neighbour in the latent space. <em>Right</em>: LLE on the oil data using 8 neighbours, 151 errors when using classification by nearest neighbour in the latent space.</p>
+
+<p>Page updated on Sun Jun 17 08:48:04 2012</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lawrennd">lawrennd</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62968536-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
